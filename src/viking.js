@@ -68,13 +68,13 @@ class War {
     }
   
     vikingAttack() {
-      var randomSaxon = Math.floor(Math.random() * this.saxonArmy.length);
-      var saxonSoldier = this.saxonArmy[randomSaxon];
+      const randomSaxon = Math.floor(Math.random() * this.saxonArmy.length);
+      const saxonSoldier = this.saxonArmy[randomSaxon];
   
-      var randomViking = Math.floor(Math.random() * this.vikingArmy.length);
-      var vikingSoldier = this.vikingArmy[randomViking];
+      const randomViking = Math.floor(Math.random() * this.vikingArmy.length);
+      const vikingSoldier = this.vikingArmy[randomViking];
   
-      var result = saxonSoldier.receiveDamage(vikingSoldier.attack());
+      const result = saxonSoldier.receiveDamage(vikingSoldier.attack());
   
      
       if (saxonSoldier.health <= 0) {
